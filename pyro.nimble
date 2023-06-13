@@ -6,7 +6,7 @@ description   = "A package template"
 license       = "GPL-3.0-or-later"
 srcDir        = "src"
 binDir        = "bin"
-bin           = @["example"]
+bin           = @["pyro"]
 
 
 # Dependencies
