@@ -1,4 +1,4 @@
-[*.{nim,nimble}]
+[*.{nim,nimble,pyro}]
 indent_size = 2
 indent_style = space
 

@@ -1,0 +1,33 @@
+import strutils
+
+let name* = "examplepkg" # Name of the package
+let desc* = "This is an example pyro package" # Description of the package
+let version* = "0.1.0-alpha" # Package version (semver string)
+let license* = "GPL3" # Or another valid spdx identifier (https://spdx.org/licenses/)
+
+let deps* = @[
+  "dep1",
+  "dep2",
+  "dep3"
+]
+let opts* = @[
+  "dep1:purpose",
+  "dep2:purpose"
+]
+let provides* = @[
+  "somebinary"
+]
+
+let src* = "https://github.com/Infinitybeond1/dye/releases/download/v$#/dye-linux.zip" % [version]
+
+proc prepare*() =
+  exec "echo 'Preparing to build'"
+
+proc build*() =
+  exec "echo 'Building'"
+
+proc install*() =
+  exec "echo 'Installing'"
+
+proc clean*() =
+  exec "echo 'Cleaning'"
